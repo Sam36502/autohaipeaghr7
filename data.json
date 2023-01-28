@@ -1,0 +1,38 @@
+{
+    "creatures": [
+        {
+            "id": "weeb",
+            "name": "Weeb",
+            "damage": 2,
+            "health": 2,
+            "effects": [
+                {
+                    "trig": "on_trn_start",
+                    "script": "_set('trgt', getFriend(-1));dmg(_get('trgt'), getDmg(getFriend(0)));"
+                },
+                {
+                    "trig": "on_faint",
+                    "script": "_print('Fuck, I losed!');"
+                }
+            ]
+        },
+        {
+            "id": "furry",
+            "name": "Furry",
+            "damage": 1,
+            "health": 3
+        }
+    ],
+    "consumables": [
+        {
+            "id": "baja_blast",
+            "name": "Mtn Dew: Baja Blast",
+            "effects": [
+                {
+                    "trig": "on_consume",
+                    "script": "_print('Mmmmmhhh. Now le epic gamer time can commence');"
+                }
+            ]
+        }
+    ]
+}
